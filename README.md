@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my personal website! This repository contains the code and assets for a responsive and accessible portfolio!
+Welcome to my personal website! This repository contains my portfolio!
 
 ## Table of Contents
 - [Access Site](#Access-Site)
@@ -11,7 +11,7 @@ Welcome to my personal website! This repository contains the code and assets for
 
 ## Access Site
 
-- **URL**: 
+- **URL**: https://jvmcpheron.github.io/janemcpheron/
 
 ---
 

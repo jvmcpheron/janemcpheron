@@ -83,13 +83,15 @@ a:hover {
 
 /* Dark Mode Button Styling */
 body.dark-mode .theme-toggle {
-    background-color: #333333; 
+    background-color: #5c5c5c; 
     color: #f9f9f9;  
 }
 
+
+
 /* Add hover effect */
 .theme-toggle:hover {
-    transform: scale(1.1);  /* Slightly enlarge on hover */
+    transform: scale(1.1);  
 }
 
 .theme-toggle img {
@@ -137,7 +139,7 @@ body.dark-mode #education{
 }
 
 .menu li :hover{
-    color: rgb(0, 174, 255);
+    color: rgb(0, 159, 238);
 }
 
 body.dark-mode .menu li :hover{
@@ -162,6 +164,7 @@ body.dark-mode #image-separator img{
 
 /* Container for image and overlay */
 .image-overlay-container {
+    background-color: #4d4d4d;
     position: relative;
 }
 
@@ -188,7 +191,8 @@ body.dark-mode #image-separator img{
 
 /* Image opacity for better text contrast */
 #image-separator .full-width-image {
-    opacity: 0.8;
+
+    opacity: 0.5;
 }
 
 /* Dark mode adjustments */
@@ -197,7 +201,7 @@ body.dark-mode .overlay-text {
 }
 
 body.dark-mode .full-width-image {
-    opacity: 0.9; /* Slightly darker image for dark mode */
+    opacity: 0.7; /* Slightly darker image for dark mode */
 }
 
 
@@ -358,8 +362,9 @@ body.dark-mode .cursor.blink {
     justify-content: center;
     text-align: left;
     width: 55%;
-    margin-top: 20px;
+    margin-top: 30px;
     padding-bottom: 20px;
+    margin-bottom: 20px;
 
 }
 
@@ -379,14 +384,18 @@ body.dark-mode .cursor.blink {
 /* INTRO DARK MODE */
 body.dark-mode .intro-card{
     background-color: #1f1f1f;
+    
 }
 
 body.dark-mode #intro{
     background-color: #000000;
 }
 
+body.dark-mode .intro-info h3{
+    color: #8e8e8e;
+}
 body.dark-mode .intro-info li{
-    color: #666666;
+    color: #828282;
 }
 body.dark-mode .intro-content h1{
     color: #747373;
@@ -424,6 +433,7 @@ body.dark-mode .intro-content h1{
         order: -1; /* Move the dark mode button to the left of the hamburger menu */
         margin: 0 10px 0 0;
     }
+
 
     body.dark-mode .menu {
         background-color: #1f1f1f;
