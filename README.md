@@ -5,19 +5,13 @@ Welcome to my personal website! This repository contains the code and assets for
 ## Table of Contents
 - [Access Site](#Access-Site)
 - [Technologies Used](#technologies-used)
-- [Setup](#setup)
 
 
 ---
 
 ## Access Site
 
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop screens.
-- **Dark Mode Support**: Toggle between light and dark themes seamlessly.
-- **Education Overlay**: Prominent display of education details on a full-width image.
-- **Smooth Navigation**: Sticky navigation bar and an intuitive layout.
-- **Custom Animations**: Typing effect and blinking cursor for dynamic text.
-- **Accessibility**: Clean design with proper color contrast and easy navigation.
+- **URL**: 
 
 ---
 
