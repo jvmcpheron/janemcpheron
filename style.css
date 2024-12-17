@@ -1,0 +1,458 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Light Mode (Default) */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+/* Navbar */
+.top-bar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    color: #333333;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 85%;
+}
+
+.profile-pic:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li {
+    font-size: 16px;
+}
+
+.menu a {
+    color: #333333;
+}
+
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background-color: #f9f9f9;  /* Light background for light mode */
+    color: #333333;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;  /* Adjust the padding to make it a smaller circle */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    margin-left: 20px; /* Align to the right of menu items */
+    width: 40px;  /* Set the width of the button */
+    height: 40px; /* Set the height of the button */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dark Mode Button Styling */
+body.dark-mode .theme-toggle {
+    background-color: #333333; 
+    color: #f9f9f9;  
+}
+
+/* Add hover effect */
+.theme-toggle:hover {
+    transform: scale(1.1);  /* Slightly enlarge on hover */
+}
+
+.theme-toggle img {
+    width: 24px;  
+    height: 24px; 
+    color: #f9f9f9;  
+}
+
+/* Optional: Add focus style */
+.theme-toggle:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Highlight on focus */
+}
+
+
+
+.top-bar-left{
+    width: 400px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#education{
+    margin:20px;
+}
+
+#experience{
+    margin:20px;
+}
+
+
+body.dark-mode #education{
+    color:#878787;
+}
+.edu-container{
+    margin: 20px;
+}
+
+#name{
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.menu li :hover{
+    color: rgb(0, 174, 255);
+}
+
+body.dark-mode .menu li :hover{
+    color: rgb(255, 106, 0);
+}
+
+
+
+
+/* Full-width image */
+.full-width-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+
+body.dark-mode #image-separator img{
+    opacity: 50%;
+}
+
+/* Container for image and overlay */
+.image-overlay-container {
+    position: relative;
+}
+
+/* Overlay text styling */
+.overlay-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white; /* Text color for better visibility */
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); /* Shadow for readability */
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for h3 and h4 */
+.overlay-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.overlay-text h4 {
+    font-size: 1.2rem;
+    margin: 2px 0;
+}
+
+/* Image opacity for better text contrast */
+#image-separator .full-width-image {
+    opacity: 0.8;
+}
+
+/* Dark mode adjustments */
+body.dark-mode .overlay-text {
+    color: #e0e0e0; /* Softer white for dark mode */
+}
+
+body.dark-mode .full-width-image {
+    opacity: 0.9; /* Slightly darker image for dark mode */
+}
+
+
+
+
+
+
+
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+    border-radius: 2px;
+}
+
+
+
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f9f9f9;
+}
+
+body.dark-mode a {
+    color: #f9f9f9;
+}
+
+body.dark-mode .top-bar {
+    background-color: #1f1f1f;
+    color: #f9f9f9;
+}
+
+body.dark-mode .menu a {
+    color: #f9f9f9;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #333333;
+    color: #f9f9f9;
+}
+.top-bar-right {
+    display: flex;
+    align-items: center; /* Align items in a row */
+}
+
+
+
+
+
+
+
+/* Intro Section Layout */
+#intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.intro-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+/* Intro Card */
+.intro-card {
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-wrap: wrap;
+    margin:20px;
+    margin-bottom: 30px;
+    opacity: 90%;
+}
+
+.intro-card:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+
+/*CURSOR CSS*/
+/* Cursor during typing (solid) */
+.cursor.static {
+    display: inline-block;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* Cursor after typing (blinking) */
+  .cursor.blink {
+    display: inline-block;
+    font-weight: bold;
+    color: black;
+    animation: blink 1s step-end infinite;
+  }
+
+body.dark-mode .cursor.static,
+body.dark-mode .cursor.blink {
+  color: #666666; /* Cursor color in dark mode */
+}
+  
+  /* Blinking animation */
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+.intro-pic {
+    width: 100%;
+
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+
+.intro-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.intro-info li {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333333;
+}
+
+/* Intro Content */
+.intro-content {
+    justify-content: center;
+    text-align: left;
+    width: 55%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.intro-content h1 {
+    margin-top: 10px;
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 18px;
+    color: #666666;
+}
+
+
+/* INTRO DARK MODE */
+body.dark-mode .intro-card{
+    background-color: #1f1f1f;
+}
+
+body.dark-mode #intro{
+    background-color: #000000;
+}
+
+body.dark-mode .intro-info li{
+    color: #666666;
+}
+body.dark-mode .intro-content h1{
+    color: #747373;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .top-bar-right {
+        position: relative; /* For correct layout adjustments */
+    }
+
+
+    .menu.open {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .theme-toggle {
+        order: -1; /* Move the dark mode button to the left of the hamburger menu */
+        margin: 0 10px 0 0;
+    }
+
+    body.dark-mode .menu {
+        background-color: #1f1f1f;
+    }
+
+    body.dark-mode .hamburger-menu span {
+        background-color: #f9f9f9;
+    }
+
+  
+}
+
+
+@media(max-width:600px){
+    #intro {
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-card {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .intro-content {
+        width: 80%;
+        text-align: left;
+        margin: 5px;
+    }
+}
