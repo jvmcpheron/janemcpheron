@@ -66,16 +66,16 @@ a:hover {
 
 /* Theme Toggle Button */
 .theme-toggle {
-    background-color: #f9f9f9;  /* Light background for light mode */
+    background-color: #f9f9f9; 
     color: #333333;
     border: none;
     border-radius: 50%;
-    padding: 8px;  /* Adjust the padding to make it a smaller circle */
+    padding: 8px;  
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
-    margin-left: 20px; /* Align to the right of menu items */
-    width: 40px;  /* Set the width of the button */
-    height: 40px; /* Set the height of the button */
+    margin-left: 20px; 
+    width: 40px;  
+    height: 40px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,10 +109,10 @@ body.dark-mode .theme-toggle {
 
 
 .top-bar-left{
-    width: 400px;
+    width: 300px;
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 #education{
@@ -132,7 +132,7 @@ body.dark-mode #education{
 }
 
 #name{
-    width: 300px;
+    
     margin-left: 20px;
     margin-top: 10px;
     font-size: 20px;
