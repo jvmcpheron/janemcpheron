@@ -161,6 +161,9 @@ body.dark-mode .menu li :hover{
 body.dark-mode #image-separator img{
     opacity: 50%;
 }
+body.dark-mode #image-separator2 img{
+    opacity: 50%;
+}
 
 /* Container for image and overlay */
 .image-overlay-container {
@@ -193,6 +196,15 @@ body.dark-mode #image-separator img{
 #image-separator .full-width-image {
 
     opacity: 0.5;
+}
+#image-separator2 .full-width-image {
+
+    opacity: 0.5;
+}
+
+#image-separator2:hover{
+  
+    cursor: pointer;
 }
 
 /* Dark mode adjustments */
@@ -448,7 +460,14 @@ body.dark-mode .intro-content h1{
 }
 
 
+
+
+
 @media(max-width:600px){
+    #projects{
+        margin: 20px !important; 
+        margin-top: 40px !important;
+    }
     #intro {
         width: 100%;
         justify-content: space-around;
@@ -473,20 +492,20 @@ body.dark-mode .intro-content h1{
 
 
 #projects{
-    margin: 50px;
+    margin: 50px; 
     text-align: left;
     margin-bottom: 100px;
 }
 
 #projects-typewriter{
-    font-size: 30px;
+    font-size: 40px;
     color: #333333;
     padding-bottom: 40px;
 }
 
 body.dark-mode #projects-typewriter{
-    font-size: 30px;
-    color:#656565;
+
+    color:#7d7d7d;
 }
 
 .projects-container{
