@@ -1,3 +1,7 @@
+
+
+
+
 /* General Reset */
 * {
     margin: 0;
@@ -64,6 +68,7 @@ a:hover {
 }
 
 
+
 /* Theme Toggle Button */
 .theme-toggle {
     background-color: #f9f9f9; 
@@ -122,6 +127,98 @@ body.dark-mode .theme-toggle {
 #experience{
     margin:20px;
 }
+
+
+
+
+
+/* Call-to-Action Section */
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 20px 0;
+    opacity: 80%;
+    border-radius: 10px;
+}
+
+
+.li-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #6aa2c5; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gh-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #cc887d; 
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.r-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: #a7cf62; 
+
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.li-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gh-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.r-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.li-button:hover {
+    background-color: #4b81a3; 
+    transform: scale(1.05); 
+}
+
+.gh-button:hover {
+    background-color: #b97064; 
+    transform: scale(1.05); 
+}
+
+.r-button:hover {
+    background-color: #8bb444; 
+    transform: scale(1.05); 
+}
+
 
 
 body.dark-mode #education{
