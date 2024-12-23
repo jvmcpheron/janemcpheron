@@ -30,27 +30,37 @@ hamburgerMenu.addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    let i = 0;
-    const txt = "Hi :)";
-    const speed = 200; // Typing speed per character
-    const typingDelay = 1000; // Delay before typing starts (in milliseconds)
-    const target = document.getElementById("typewriter");
-  
-    function typeWriter() {
-      if (i < txt.length) {
-        target.innerHTML = txt.substring(0, i + 1) + '<span class="cursor static">|</span>';
-        i++;
-        setTimeout(typeWriter, speed);
-      } else {
-        // Keep cursor blinking after typing finishes
-        target.innerHTML = txt + '<span class="cursor blink">|</span>';
+  const typewriterElements = [
+      {
+          id: "intro-typewriter",
+          text: "Hi :)",
+          typingDelay: 1000,
+          speed: 200,
+      },
+      {
+          id: "projects-typewriter",
+          text: "< Projects / >",
+          typingDelay: 2000,
+          speed: 150,
+      },
+  ];
+
+  typewriterElements.forEach(({ id, text, typingDelay, speed }) => {
+      let index = 0;
+      const target = document.getElementById(id);
+
+      function typeWriter() {
+          if (index < text.length) {
+              target.innerHTML = text.substring(0, index + 1) + '<span class="cursor static">|</span>';
+              index++;
+              setTimeout(typeWriter, speed);
+          } else {
+              target.innerHTML = text + '<span class="cursor blink">|</span>';
+          }
       }
-    }
-  
-    // Show the cursor initially, then start typing after the delay
-    target.innerHTML = '<span class="cursor static">|</span>';
-    setTimeout(typeWriter, typingDelay);
+
+      // Show the cursor initially, then start typing after the delay
+      target.innerHTML = '<span class="cursor static">|</span>';
+      setTimeout(typeWriter, typingDelay);
   });
-  
-  
-  
+});
