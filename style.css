@@ -138,7 +138,7 @@ body.dark-mode .theme-toggle {
 
 .theme-toggle:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    box-shadow: 0 0 5px rgba(93, 93, 93, 0.5); 
 }
 
 
