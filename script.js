@@ -43,6 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
           typingDelay: 2000,
           speed: 150,
       },
+      {
+        id: "experience-typewriter",
+        text: "< Experience / >",
+        typingDelay: 3000,
+        speed: 150,
+    },
   ];
 
   typewriterElements.forEach(({ id, text, typingDelay, speed }) => {

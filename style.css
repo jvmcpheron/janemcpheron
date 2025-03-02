@@ -177,7 +177,7 @@ body.dark-mode .theme-toggle {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #e0e0e0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
 
 }
 
@@ -194,7 +194,7 @@ body.dark-mode .theme-toggle {
     background-color: #f9f9f9;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     display: flex;
     align-items: center;
     text-align: left;
@@ -431,8 +431,12 @@ body.dark-mode #image-separator2 img{
 .image-overlay-container {
     background-color: #4d4d4d;
     position: relative;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.15), 
-    0 4px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+.image-overlay-container2 {
+    background-color: #4d4d4d;
+    position: relative;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.15);
 }
 
 /* Overlay text styling */
@@ -609,6 +613,98 @@ body.dark-mode .card-text p {
 
 
 
+/* EXPERIENCE SECTION */
+#Experience {
+    margin: 50px;
+    
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 40px;
+    padding-bottom: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.experience-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.experience-item {
+    background: rgb(231, 230, 230);
+    padding: 25px 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.experience-item h3 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.experience-item p {
+    font-weight: bold;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+}
+
+.experience-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Dark mode hover effect */
+.dark-mode .experience-item:hover {
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2)
+}
+
+
+#experience-typewriter{
+    font-size: 40px;
+    color: #333333;
+    padding-bottom: 40px;
+}
+
+body.dark-mode #experience-typewriter{
+    color:#7d7d7d;
+}
+
+
+/* dark mode */
+
+.dark-mode .section-title{
+    color:#7d7d7d;
+}
+
+.dark-mode #experience {
+    background-color: #1e1e1e;
+    color:#7d7d7d;
+}
+
+.dark-mode .experience-item {
+    background: #2a2a2a;
+    color: rgb(226, 225, 225);
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .experience-item h3 {
+    color: #afafaf;
+}
 
 
 
@@ -680,6 +776,10 @@ body.dark-mode .card-text p {
 
 @media(max-width:600px){
     #projects{
+        margin: 20px !important; 
+        margin-top: 40px !important;
+    }
+    #Experience{
         margin: 20px !important; 
         margin-top: 40px !important;
     }
