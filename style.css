@@ -101,6 +101,8 @@ body.dark-mode li:hover{
     color: rgb(0, 159, 238);
 }
 
+
+
 .menu-item:hover{
     
     transform: scale(1.1) !important;  
@@ -734,6 +736,7 @@ body.dark-mode #experience-typewriter{
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
+
     .menu {
         display: none;
         flex-direction: column;
@@ -760,10 +763,35 @@ body.dark-mode #experience-typewriter{
         display: flex;
     }
 
+    .menu:hover{
+        opacity: 100%;
+        transition: .25s;
+    }
+
+    
     .hamburger-menu {
         display: flex;
         margin-left: auto;
     }
+
+    #span1.active{
+        transform: translateY(10px) rotate(45deg);
+        width: 30px;
+        transition: .25s;
+    }
+    
+    #span2.active {
+        opacity: 0;
+    }
+    
+    #span3.active{
+        transform: translateY(-6px) rotate(-45deg);
+        width: 30px;
+        transition: .25s;
+    }
+
+
+
 
     .theme-toggle {
         order: -1; 
