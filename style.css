@@ -17,9 +17,7 @@ a {
     transition: color 0.3s;
 }
 
-a:hover {
-    color: #007BFF;
-}
+
 body.dark-mode {
     background-color: #121212;
     color: #f9f9f9;
@@ -50,6 +48,7 @@ body.dark-mode a {
 }
 
 .profile-pic {
+    margin-left: 8px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -59,6 +58,9 @@ body.dark-mode a {
 .profile-pic:hover{
     opacity: 85%;
     cursor: pointer;
+    transform: scale(1.1) !important;  
+    transition: .25s;
+
 }
 
 .menu {
@@ -75,13 +77,33 @@ body.dark-mode a {
     color: #333333;
 }
 #name{
-    margin-left: 12px;
+    margin-left: 16px;
     margin-top: 10px;
     font-size: 20px;
 }
 
+#name:hover{
+    cursor: pointer;
+    transform: scale(1.1)
+
+}
+
+li:hover{
+    transition: .25s;
+    color: rgb(0, 159, 238);
+}
+
+body.dark-mode li:hover{
+    color: rgb(255, 106, 0);
+}
+
 .menu li :hover{
     color: rgb(0, 159, 238);
+}
+
+.menu-item:hover{
+    
+    transform: scale(1.1) !important;  
 }
 
 body.dark-mode .menu li :hover{
@@ -615,7 +637,7 @@ body.dark-mode .card-text p {
 
 /* EXPERIENCE SECTION */
 #Experience {
-    margin: 50px;
+    margin: 50px 100px 50px 50px;
     
     border-radius: 10px;
 }
@@ -666,6 +688,7 @@ body.dark-mode .card-text p {
     transform: translateY(-5px);
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+
 }
 
 /* Dark mode hover effect */
@@ -718,12 +741,19 @@ body.dark-mode #experience-typewriter{
         top: 60px;
         right: 20px;
         background-color: #f9f9f9;
-        padding: 10px;
+        padding: 15px 10px;
+        padding-right: 25px;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        opacity: 90%;
+       
     }
     .top-bar-right {
         position: relative; 
+    }
+    .menu-item{
+        padding: 8px 15px;
+        font-size: 20px !important;
     }
 
     .menu.open {
