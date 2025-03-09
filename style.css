@@ -815,6 +815,23 @@ body.dark-mode #experience-typewriter{
         transition: .25s ease-in-out;
     }
 
+    #span1.inactive{
+        transform: translateY(0px) rotate(0deg);
+        width: 25px;
+        transition: .25s ease-in-out;
+    }
+    
+    #span2.inactive {
+        opacity: 100%;
+    }
+    
+    #span3.inactive{
+        transform: translateY(0px) rotate(0deg);
+        width: 25px;
+        transition: .25s ease-in-out;
+    }
+    
+
 
 
 

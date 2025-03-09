@@ -2,9 +2,12 @@
 const themeButton = document.getElementById('theme-button');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const menu = document.querySelector('.menu');
-const span1 = document.querySelector('#span1')
-const span2 = document.querySelector('#span2')
-const span3 = document.querySelector('#span3')
+const span1 = document.querySelector('#span1');
+const span2 = document.querySelector('#span2');
+const span3 = document.querySelector('#span3');
+
+
+
 
 // Default mode to light
 document.body.classList.remove('dark-mode');
@@ -30,6 +33,18 @@ themeButton.addEventListener('click', () => {
 // Toggle hamburger menu
 hamburgerMenu.addEventListener('click', () => {
     menu.classList.toggle('open');
+    if(span1.classList.contains('active')){
+        span1.classList.toggle('inactive');
+        span2.classList.toggle('inactive');
+        span3.classList.toggle('inactive');
+        console.log('inactive');
+    }else if (span1.classList.contains('inactive')){
+        span1.classList.toggle('inactive');
+        span2.classList.toggle('inactive');
+        span3.classList.toggle('inactive');
+        console.log('active');
+    }
+
     span1.classList.toggle('active');
     span2.classList.toggle('active');
     span3.classList.toggle('active');
