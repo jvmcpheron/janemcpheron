@@ -59,7 +59,7 @@ body.dark-mode a {
     opacity: 85%;
     cursor: pointer;
     transform: scale(1.1) !important;  
-    transition: .25s;
+    transition:  .25s  ;
 
 }
 
@@ -740,17 +740,19 @@ body.dark-mode #experience-typewriter{
 @media (max-width: 768px) {
 
     .menu {
-        display: none;
+        display: flex;
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 20px;
+        right: -200px;
         background-color: #f9f9f9;
         padding: 15px 10px;
         padding-right: 25px;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        opacity: 90%;
+        opacity:0%;
+        transition: .5s ease-in-out;
+        
        
     }
     .top-bar-right {
@@ -762,7 +764,13 @@ body.dark-mode #experience-typewriter{
     }
 
     .menu.open {
+        position: absolute;
+        top: 60px;
+        right: 0px;
         display: flex;
+        opacity: 90% ;
+        transition: right .5s ease-in-out; 
+        
     }
 
     .menu:hover{
@@ -776,10 +784,12 @@ body.dark-mode #experience-typewriter{
         margin-left: auto;
     }
 
+    
+
     #span1.active{
         transform: translateY(10px) rotate(45deg);
         width: 30px;
-        transition: .25s;
+        transition: .25s ease-in-out;
     }
     
     #span2.active {
@@ -789,7 +799,7 @@ body.dark-mode #experience-typewriter{
     #span3.active{
         transform: translateY(-6px) rotate(-45deg);
         width: 30px;
-        transition: .25s;
+        transition: .25s ease-in-out;
     }
 
 
