@@ -9,6 +9,7 @@ body {
     background-color: #ffffff;
     color: #333333;
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 a {
@@ -752,6 +753,7 @@ body.dark-mode #experience-typewriter{
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         opacity:0%;
         transition: .5s ease-in-out;
+        visibility: hidden;
         
        
     }
@@ -784,7 +786,7 @@ body.dark-mode #experience-typewriter{
         margin-left: auto;
     }
 
-    
+
 
     #span1.active{
         transform: translateY(10px) rotate(45deg);
