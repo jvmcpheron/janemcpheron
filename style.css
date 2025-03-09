@@ -3,14 +3,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
+html, body { overflow-x: hidden; }
 
 body {
     background-color: #ffffff;
     color: #333333;
     font-family: Arial, sans-serif;
-    overflow-x: hidden;
+    max-width: 100vw;
     width: 100%;
+    overflow-x: hidden;
+    
 }
 
 a {
@@ -742,6 +747,7 @@ body.dark-mode #experience-typewriter{
 @media (max-width: 768px) {
 
     .menu {
+        position: fixed;
         display: flex;
         flex-direction: column;
         position: absolute;
