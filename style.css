@@ -229,6 +229,8 @@ body.dark-mode .theme-toggle {
 }
 
 .intro-card:hover{
+    transform: scale(1.05) !important; 
+    transition: .15s;
     opacity: 100%;
     cursor: pointer;
 }
