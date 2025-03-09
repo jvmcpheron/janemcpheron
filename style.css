@@ -10,6 +10,7 @@ body {
     color: #333333;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
+    width: 100%;
 }
 
 a {
