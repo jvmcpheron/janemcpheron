@@ -37,12 +37,12 @@ hamburgerMenu.addEventListener('click', () => {
         span1.classList.toggle('inactive');
         span2.classList.toggle('inactive');
         span3.classList.toggle('inactive');
-        console.log('inactive');
+
     }else if (span1.classList.contains('inactive')){
         span1.classList.toggle('inactive');
         span2.classList.toggle('inactive');
         span3.classList.toggle('inactive');
-        console.log('active');
+ 
     }
 
     span1.classList.toggle('active');

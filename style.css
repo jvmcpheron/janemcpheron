@@ -40,7 +40,7 @@ body.dark-mode a {
 
 /* TOP BAR */
 .top-bar {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     display: flex;
@@ -204,6 +204,7 @@ body.dark-mode .theme-toggle {
 
 /* INTRO SECTION */
 #intro {
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
