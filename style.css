@@ -461,6 +461,10 @@ body.dark-mode #image-separator2 img{
     opacity: 40%;
 }
 
+body.dark-mode #image-separator3 img{
+    opacity: 40%;
+}
+
 /* Container for image and overlay */
 .image-overlay-container {
     background-color: #4d4d4d;
@@ -484,6 +488,21 @@ body.dark-mode #image-separator2 img{
     margin-right: 40px;
 }
 
+.overlay-text2 {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    font-family: Arial, sans-serif;
+    margin-right: 40px;
+ 
+}
+
+.overlay-text2 h1{
+    font-size: 30px !important;
+}
+
 /* Styling for h3 and h4 */
 .overlay-text h3 {
     font-size: 1.5rem;
@@ -499,6 +518,47 @@ body.dark-mode #image-separator2 img{
 #image-separator .full-width-image {
     opacity: 0.5;
 }
+#image-separator2 .full-width-image {
+    opacity: 0.45;
+}
+
+#image-separator2:hover{
+    cursor: pointer;
+}
+
+#image-separator3 .full-width-image {
+    opacity: 0.45;
+}
+
+#image-separtor3{
+    justify-content: center;
+}
+
+
+#image-separator3:hover img{
+    cursor: pointer;
+    opacity: .9;
+    transform: scale(1.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+#image-separator2:hover img{
+    cursor: pointer;
+    opacity: .9;
+    transform: scale(1.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+#image-separator:hover img{
+
+    opacity: .9;
+    transform: scale(1.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
 #image-separator2 .full-width-image {
     opacity: 0.45;
 }
