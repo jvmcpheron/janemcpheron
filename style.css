@@ -537,35 +537,23 @@ body.dark-mode #image-separator3 img{
 
 #image-separator3:hover img{
     cursor: pointer;
-    opacity: .9;
-    transform: scale(1.05); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 
 #image-separator2:hover img{
     cursor: pointer;
-    opacity: .9;
-    transform: scale(1.05); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
 }
 
 #image-separator:hover img{
-
-    opacity: .9;
-    transform: scale(1.05); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+    cursor: pointer;
 }
 
 #image-separator2 .full-width-image {
     opacity: 0.45;
 }
 
-#image-separator2:hover{
-    cursor: pointer;
-}
+
 
 /* Dark mode adjustments */
 body.dark-mode .overlay-text {
